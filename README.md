@@ -1,0 +1,2 @@
+# asksophia
+Consciousness Interface App
