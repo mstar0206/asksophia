@@ -1,7 +1,7 @@
 # Ask Sophia- MVP
 Consciousness Interface App
 
-Welcome to the official Ask Sophia App repository. This project is the intellectual property of Monique Sophia Starr and is part of the Sophia/Wealth Maven ecosystem.
+Welcome to the official Ask Sophia App repository. This project is the intellectual property of Monique Sophia Star and is part of the Conscious Connect eco system.
 
 All code, assets, and documentation must be added and maintained in this repository only.
 
