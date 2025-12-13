@@ -1,1 +1,42 @@
+users
+- id (uuid, PK, references auth.users)
+- email
+- created_at
+- last_login_at
+- plan_tier (| plus | pro)
 
+sessions
+- id (uuid, PK)
+- user_id (uuid, FK → users.id)
+- created_at
+- closed_at (nullable)
+- session_type (chat | journal | reflection)
+
+entries
+- id (uuid, PK)
+- session_id (uuid, FK → sessions.id)
+- user_id (uuid, FK → users.id)
+- content (text)
+- entry_type (prompt | journal | question)
+- created_at
+
+responses
+- id (uuid, PK)
+- entry_id (uuid, FK → entries.id)
+- model (gpt-4o | future)
+- response_text (text)
+- created_at
+
+memories
+- id (uuid, PK)
+- user_id (uuid, FK → users.id)
+- source_entry_id (uuid)
+- memory_text (text)
+- category (belief | goal | pattern)
+- created_at
+
+User
+ ├─ Sessions
+ │   ├─ Entries
+ │   │   └─ Responses
+ └─ Memories
